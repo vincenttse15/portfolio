@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from 'react';
 import Navbar from "../components/Navbar";
 import * as styles from "../styles/index.module.css";
 
-const IndexPage = () => {
+const Portfolio = () => {
   return (
     <body>
       <main>
@@ -12,4 +12,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage;
+export default Portfolio;

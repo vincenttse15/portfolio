@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.navbar {
+  height: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353941;
+}
+
+.name {
+  display: flex;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-size: 18px;
+}
+
+.link_container {
+  display: flex;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color:  #e8eaed;
+}
