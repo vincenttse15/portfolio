@@ -8,11 +8,22 @@
   flex-direction: column;
 }
 
-.link_image {
-  height: 5vh;
-  width: 5vh;
-  margin-left: 5px;
-  margin-right: 5px;
+.link_container {
+  font-size: 2rem;
+}
+
+.link {
+  color: inherit;
+}
+
+.image {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: color 1s;
+}
+
+.image:hover {
+  color: #90b8f8;
 }
 
 .email {
