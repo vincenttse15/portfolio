@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+.footer {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link_image {
+  height: 5vh;
+  width: 5vh;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.email {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #e8eaed;
+  transition: color 1s;
+}
+
+.email:hover {
+  color: #90b8f8;
+}

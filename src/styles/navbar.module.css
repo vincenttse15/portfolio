@@ -14,12 +14,13 @@
 .name {
   display: flex;
   font-family: 'Lexend Zetta', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .link_container {
   display: flex;
   font-family: 'Electrolize', sans-serif;
+  font-size: 1rem;
 }
 
 .link {

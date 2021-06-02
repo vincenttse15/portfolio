@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
 body {
   background-color: #26282B;
   margin: 0px;
   color:  #e8eaed;
+  height: 100vh;
+}
+
+.page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 7rem;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 5rem;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: 2rem;
 }
