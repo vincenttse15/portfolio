@@ -21,21 +21,21 @@ body {
   margin-top: 0px;
   font-size: 48px;
   font-weight: 700;
-  color: #80DEEA;
+  color: $primary-200;
 }
 
 .home_h2 {
   margin-top: 0px;
   font-size: 30px;
   font-weight: 500;
-  color: #B2EBF2;
+  color: $primary-100;
 }
 
 .home_h3 {
   margin-top: 0px;
   font-size: 24px;
   font-weight: 400;
-  color: #E0F7FA;
+  color: $primary-50;
 }
 
 .portfolio_container {
@@ -70,7 +70,7 @@ body {
 }
 
 .project_title {
-  color: #B2EBF2;
+  color: $primary-100;
   font-size: 24px;
 }
 
@@ -85,7 +85,7 @@ body {
 
 .project_technology {
   font-size: 20px;
-  color: #B2EBF2;  
+  color: $primary-100;  
   margin-left: 20px;
 }
 
@@ -95,9 +95,9 @@ body {
 }
 
 .technology {
-  border: 2px solid #b0bec5;
+  border: 2px solid $supporting-text;
   border-radius: 0.5rem;
-  color: #b0bec5;
+  color: $supporting-text;
   padding: 5px 10px 5px 10px;
   font-size: 12px;
   margin-right: 10px;

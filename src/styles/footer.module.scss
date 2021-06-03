@@ -1,3 +1,4 @@
+@use 'theme' as *;
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
 
 .footer {
@@ -14,7 +15,7 @@
 }
 
 .link {
-  color: #E0F7FA;
+  color: $supporting-text;
 }
 
 .image {
@@ -24,17 +25,17 @@
 }
 
 .image:hover {
-  color: #80DEEA;
+  color: $primary-200;
 }
 
 .email {
   font-family: 'Oxygen', sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  color: #E0F7FA;
+  color: $supporting-text;
   transition: color 0.5s;
 }
 
 .email:hover {
-  color: #80DEEA;
+  color: $primary-200;
 }
