@@ -1,7 +1,5 @@
 import * as React from 'react';
-import * as styles from '../styles/footer.module.css';
-import github from '../images/github.png';
-import linkedin from '../images/linkedin.png';
+import * as styles from '../styles/footer.module.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

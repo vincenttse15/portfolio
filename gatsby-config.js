@@ -16,5 +16,6 @@ module.exports = {
       __key: "images",
     },
     "gatsby-plugin-fontawesome-css",
+    `gatsby-plugin-sass`,
   ],
 };

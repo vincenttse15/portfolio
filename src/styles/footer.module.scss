@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #121212;
 }
 
 .link_container {
@@ -13,27 +14,27 @@
 }
 
 .link {
-  color: inherit;
+  color: #E0F7FA;
 }
 
 .image {
   margin-left: 10px;
   margin-right: 10px;
-  transition: color 1s;
+  transition: color 0.5s;
 }
 
 .image:hover {
-  color: #90b8f8;
+  color: #80DEEA;
 }
 
 .email {
   font-family: 'Oxygen', sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  color: #e8eaed;
-  transition: color 1s;
+  color: #E0F7FA;
+  transition: color 0.5s;
 }
 
 .email:hover {
-  color: #90b8f8;
+  color: #80DEEA;
 }
