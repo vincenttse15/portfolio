@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
-    <body>
+    <body id="top">
       <main>
         <Navbar />
         <div className={styles.home_container}>
@@ -27,7 +27,7 @@ const IndexPage = () => {
         </div>
         <div className={styles.portfolio_container}>
           <div className={styles.portfolio_heading}>
-            <h1 className={styles.portfolio_h1}>
+            <h1 className={styles.portfolio_h1} id="projects">
               Projects
             </h1>
           </div>
@@ -35,33 +35,62 @@ const IndexPage = () => {
             <h2 className={styles.project_title}>
               DoReMeet
             </h2>
-            <ul className={styles.project_list}>
-              <li>
-                Support a six-person team in a frontend capacity to create an application that links artists
-                by genre and meeting preference (virtual or non virtual)
-              </li>
-              <li>
-                Accomplished documentation of user requirements, use cases, priorities, quality assurance
-                tests, and usability tests
-              </li>
-              <li>
-                Streamlined features that allowed registered users to post and search in a collaborative
-                environment
-              </li>
-              <li>
-                Devised components such as user profiles and matches into the application
-              </li>
-            </ul>
+            <span className={styles.project_description}>
+              The first application I built using ReactJS with a team of six as front-end engineer.
+              This application was created to link artists by genre and meeting preference (virtual or non virtual).
+            </span>
             <h3 className={styles.project_technology}>
               Technology
             </h3>
             <div className={styles.technology_container}>
               <span className={styles.technology}>JavaScript</span>
-              <span className={styles.technology}>ReactJS</span>
+              <span className={styles.technology}>React.js</span>
+              <span className={styles.technology}>Node.js</span>
+              <span className={styles.technology}>Express.js</span>
+            </div>
+          </div>
+          <div className={styles.project_container}>
+            <h2 className={styles.project_title}>
+              Marketplace 2.0
+            </h2>
+            <span className={styles.project_description}>
+              An e-commerce application I developed with a team of four as full-stack engineer.
+            </span>
+            <h3 className={styles.project_technology}>
+              Technology
+            </h3>
+            <div className={styles.technology_container}>
+              <span className={styles.technology}>JavaScript</span>
+              <span className={styles.technology}>TypeScript</span>
+              <span className={styles.technology}>MongoDB</span>
+              <span className={styles.technology}>React.js</span>
+              <span className={styles.technology}>Redux</span>
+              <span className={styles.technology}>Node.js</span>
+              <span className={styles.technology}>Express.js</span>
+            </div>
+          </div>
+          <div className={styles.project_container}>
+            <h2 className={styles.project_title}>
+              Database Project
+            </h2>
+            <span className={styles.project_description}>
+              Designed a command line application from the ground up that utilizes a database created
+              in MySQL purposed for a University.
+            </span>
+            <h3 className={styles.project_technology}>
+              Technology
+            </h3>
+            <div className={styles.technology_container}>
+              <span className={styles.technology}>Node.js</span>
+              <span className={styles.technology}>Express.js</span>
+              <span className={styles.technology}>MySQL</span>
             </div>
           </div>
         </div>
-        <Footer />
+        <div className={styles.contact_container} id="contact">
+          <h1 className={styles.contact_h1}>Contact</h1>
+          <Footer />
+        </div>
       </main>
     </body>
   )
