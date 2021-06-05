@@ -4,7 +4,7 @@ import PDF from '../resume/Vincent_Tse_Resume.pdf';
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${styles.padding}`}>
       <div className={styles.name}>
         <a href="#top" className={styles.link}>VINCENT TSE</a>
       </div>

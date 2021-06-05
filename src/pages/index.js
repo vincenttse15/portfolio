@@ -10,7 +10,7 @@ const IndexPage = () => {
     <body id="top">
       <main>
         <Navbar />
-        <div className={styles.home_container}>
+        <div className={`${styles.home_container} ${styles.padding}`}>
           <div>
             <h1 className={styles.home_h1}>
               HI, I'M <span className={styles.home_highlight}>VINCENT</span>.
@@ -22,13 +22,22 @@ const IndexPage = () => {
             </h2>
           </div>
         </div>
-        <div className={styles.doremeet_container}>
+        <div className={`${styles.doremeet_container} ${styles.padding}`}>
           <div className={styles.image_container}>
             <img src={music} alt="music" className={styles.music}></img>
-            <img src={band} alt="band"></img>
+            <img src={band} alt="band" className={styles.band}></img>
           </div>
           <div className={styles.description_container}>
             <span className={styles.project_title}>DoReMeet</span>
+            <span className={styles.project_description}>
+              The first application I built using ReactJS with a team of six as front-end engineer.
+              This application was created to link artists by genre and meeting preference (virtual or non virtual).
+            </span>
+            <span className={styles.project_technology_title}>Technology</span>
+            <div className={styles.project_technology}>
+              <span>React.js</span>
+              <span>Node.js</span>
+            </div>
           </div>
         </div>
       </main>
