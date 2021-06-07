@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  align-content: center;
+  justify-content: center;
 }
 
 .project_title {
@@ -94,6 +94,12 @@ body {
 
 .project_technology {
   display: flex;
-  gap: 20px;
+  gap: 10px 20px;
   color: #2296f3;
+  flex-wrap: wrap;
+}
+
+.marketplace_container {
+  background-color: #E3F2FD;
+  display: flex;
 }

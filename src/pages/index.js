@@ -4,6 +4,7 @@ import * as styles from "../styles/index.module.scss";
 //import Footer from "../components/Footer";
 import music from "../images/music.png";
 import band from "../images/band.png";
+import ecommerce from "../images/ecommerce.png"
 
 const IndexPage = () => {
   return (
@@ -37,6 +38,27 @@ const IndexPage = () => {
             <div className={styles.project_technology}>
               <span>React.js</span>
               <span>Node.js</span>
+              <span>JavaScript</span>
+              <span>Express.js</span>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.marketplace_container} ${styles.padding}`}>
+          <div className={styles.image_container}>
+            <img src={ecommerce} alt="ecommerece"></img>
+          </div>
+          <div className={styles.description_container}>
+            <span className={styles.project_title}>Marketplace 2.0</span>
+            <span className={styles.project_description}>An e-commerce application I developed with a team of four as full-stack engineer.</span>
+            <span className={styles.project_technology_title}>Technology</span>
+            <div className={styles.project_technology}>
+              <span>React.js</span>
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>Redux</span>
+              <span>MongoDB</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
             </div>
           </div>
         </div>
