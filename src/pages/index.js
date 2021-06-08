@@ -31,10 +31,10 @@ const IndexPage = () => {
             </div>
           </div>
           <div className={styles.socials_container}>
-            <a className={styles.social_link} href="https://github.com/vincenttse15">
+            <a className={styles.social_link} href="https://github.com/vincenttse15" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={['fab', 'github-square']} className={styles.social_image} />
             </a>
-            <a className={styles.social_link} href="https://www.linkedin.com/in/vincent-tse-0084a7210/">
+            <a className={styles.social_link} href="https://www.linkedin.com/in/vincent-tse-0084a7210/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={['fab', 'linkedin']} className={styles.social_image} />
             </a>
             <a className={styles.social_link} href="mailto:vincenttse19@gmail.com">
@@ -42,7 +42,7 @@ const IndexPage = () => {
             </a>
           </div>
         </div>
-        <div className={`${styles.doremeet_container} ${styles.padding}`}>
+        <div className={`${styles.doremeet_container} ${styles.padding}`} id="projects">
           <div className={styles.image_container}>
             <img src={music} alt="music" className={styles.image}></img>
             <img src={band} alt="band" className={styles.image}></img>
