@@ -15,10 +15,16 @@ body {
 
 .home_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: 'Lato', sans-serif;
-  padding-top: 150px;
-  height: 300px;
+  height: 45vh;
+}
+
+.home_text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .home_h1 {
@@ -40,28 +46,52 @@ body {
   color: #2296f3;
 }
 
+.socials_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.social_image {
+  font-size: 3rem;
+  transition: transform 0.5s;
+}
+
+.social_image:hover {
+  transform: scale(1.2);
+}
+
+.social_link {
+  color: #2296f3;
+}
+
 .doremeet_container {
   background-color: #eeeeee;
   display: flex;
+  height: 57vh;
+}
+
+.marketplace_container {
+  background-color: #E3F2FD;
+  display: flex;
+  height: 57vh;
+}
+
+.database_container {
+  background-color: #212121;
+  display: flex;
+  height: 57vh;
 }
 
 .image_container {
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
   height: 100%;
-}
-
-.music {
-  height: 40%;
-  width: auto;
-}
-
-.band {
-  width: auto;
-  height: 60%;
 }
 
 .description_container {
@@ -99,7 +129,26 @@ body {
   flex-wrap: wrap;
 }
 
-.marketplace_container {
-  background-color: #E3F2FD;
-  display: flex;
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.project_title_bright {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #F5F5F5;
+}
+
+.project_technology_title_bright {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #F5F5F5;
+}
+
+.project_description_bright {
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #FAFAFA;
 }
