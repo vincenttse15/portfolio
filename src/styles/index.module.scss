@@ -69,7 +69,7 @@ body {
 }
 
 .doremeet_container {
-  background-color: #eeeeee;
+  background-color: #e3fdfb;
   display: flex;
   height: 75vh;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .database_container {
-  background-color: #212121;
+  background-color: #e3e5fd;
   display: flex;
   height: 75vh;
 }
@@ -135,24 +135,6 @@ body {
   display: block;
 }
 
-.project_title_bright {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #F5F5F5;
-}
-
-.project_technology_title_bright {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #F5F5F5;
-}
-
-.project_description_bright {
-  line-height: 1.5;
-  margin-bottom: 40px;
-  color: #FAFAFA;
-}
-
 .marketplace {
   display: flex;
   max-height: 65%;
@@ -176,7 +158,6 @@ body {
 
 .database {
   display: flex;
-  max-height: 30%;
   justify-content: center;
   max-height: 50%;
 }

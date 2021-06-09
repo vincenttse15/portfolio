@@ -94,12 +94,12 @@ const IndexPage = () => {
             </div>
           </div>
           <div className={styles.description_container}>
-            <span className={styles.project_title_bright}>Database Project</span>
-            <span className={styles.project_description_bright}>
+            <span className={styles.project_title}>Database Project</span>
+            <span className={styles.project_description}>
               Designed a command line application from the ground up that utilizes a database created
               in MySQL purposed for a University.
             </span>
-            <span className={styles.project_technology_title_bright}>Technology</span>
+            <span className={styles.project_technology_title}>Technology</span>
             <div className={styles.project_technology}>
               <span>Node.js</span>
               <span>Express.js</span>
