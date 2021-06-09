@@ -44,8 +44,12 @@ const IndexPage = () => {
         </div>
         <div className={`${styles.doremeet_container} ${styles.padding}`} id="projects">
           <div className={styles.image_container}>
-            <img src={music} alt="music" className={styles.image}></img>
-            <img src={band} alt="band" className={styles.image}></img>
+            <div className={styles.music}>
+              <img src={music} alt="music" className={styles.image}></img>
+            </div>
+            <div className={styles.band}>
+              <img src={band} alt="band" className={styles.image}></img>
+            </div>
           </div>
           <div className={styles.description_container}>
             <span className={styles.project_title}>DoReMeet</span>
@@ -64,7 +68,9 @@ const IndexPage = () => {
         </div>
         <div className={`${styles.marketplace_container} ${styles.padding}`}>
           <div className={styles.image_container}>
-            <img src={ecommerce} alt="ecommerece" className={styles.image}></img>
+            <div className={styles.marketplace}>
+              <img src={ecommerce} alt="ecommerce" className={styles.image}></img>
+            </div>
           </div>
           <div className={styles.description_container}>
             <span className={styles.project_title}>Marketplace 2.0</span>
@@ -83,7 +89,9 @@ const IndexPage = () => {
         </div>
         <div className={`${styles.database_container} ${styles.padding}`}>
           <div className={styles.image_container}>
-            <img src={database} alt="database" className={styles.image}></img>
+            <div className={styles.database}>
+              <img src={database} alt="database" className={styles.image}></img>
+            </div>
           </div>
           <div className={styles.description_container}>
             <span className={styles.project_title_bright}>Database Project</span>
