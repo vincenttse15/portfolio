@@ -7,10 +7,9 @@ body {
   width: 100vw;
 }
 
-.container {
-  padding-top: 50px;
+.about_container {
   display: flex;
-  height: 50vh;
+  height: 90vh;
 }
 
 .padding {
@@ -20,8 +19,16 @@ body {
 
 .image_container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   height: 100%;
+}
+
+.vincent {
+  display: flex;
+  justify-content: center;
+  max-height: 80%;
 }
 
 .image {
@@ -35,11 +42,13 @@ body {
   width: 50%;
   height: 100%;
   flex-direction: column;
+  justify-content: center;
   font-family: $lato;
+  padding-left: 100px;
 }
 
 .text {
-  color: #424242;
+  color: #212121;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
@@ -49,4 +58,72 @@ body {
 .text_h1 {
   color: #212121;
   margin: 0px;
+}
+
+.email {
+  text-decoration: none;
+  color: #2296f3;
+  transition: color 0.25s;
+}
+
+.email:hover {
+  color: #1b75d2;
+}
+
+.divider {
+  margin-top: 20px;
+  border-bottom: 5px solid #2296f3;
+  width: 3em;
+}
+
+.drawing_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3F2FD;
+  height: 25vh;
+}
+
+.header_h1 {
+  font-family: $maven;
+  font-size: 60px;
+  color: #212121;
+  margin: 0px;
+}
+
+.icons {
+  font-size: 60px;
+  vertical-align: middle;
+  color: #212121;
+  margin-left: 20px;
+}
+
+.woody_container {
+  background-color: #FCE4EC;
+  display: flex;
+  height: 75vh;
+}
+
+.woody {
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.description_container {
+  width: 50%;
+  padding-left: 100px;
+  font-family: $maven;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: center;
+  color: #212121;
+}
+
+.paint_text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #212121;
 }

@@ -15,7 +15,7 @@ body {
 
 .home_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: $lato;
   height: 70vh;
 }
@@ -43,28 +43,6 @@ body {
 }
 
 .home_highlight {
-  color: #2296f3;
-}
-
-.socials_container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
-}
-
-.social_image {
-  font-size: 48px;
-  transition: transform 0.5s;
-}
-
-.social_image:hover {
-  transform: scale(1.2);
-}
-
-.social_link {
   color: #2296f3;
 }
 

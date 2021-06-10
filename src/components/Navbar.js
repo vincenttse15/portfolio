@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/" className={styles.link}>VINCENT TSE</Link>
       </div>
       <div className={styles.link_container}>
-        <a href="#projects" className={`${styles.link} ${styles.right_link}`}>PORTFOLIO</a>
+        <Link to="/" className={`${styles.link} ${styles.right_link}`}>PORTFOLIO</Link>
         <Link to="/about" className={`${styles.link} ${styles.right_link}`}>ABOUT</Link>
         <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`}>RESUME</a>
       </div>
