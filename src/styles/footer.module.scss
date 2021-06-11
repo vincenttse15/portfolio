@@ -3,9 +3,11 @@
 .footer_container {
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 30vh;
   max-width: 100%;
   justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid #2296f3;
 }
 
 .text_container {
@@ -15,7 +17,7 @@
 
 .footer_h1 {
   font-family: $lato;
-  font-size: 60px;
+  font-size: 48px;
 }
 
 .highlight {

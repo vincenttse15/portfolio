@@ -12,6 +12,7 @@ const Navbar = () => {
       <div className={styles.link_container}>
         <Link to="/" className={`${styles.link} ${styles.right_link}`}>PORTFOLIO</Link>
         <Link to="/about" className={`${styles.link} ${styles.right_link}`}>ABOUT</Link>
+        <a href="#contact" className={`${styles.link} ${styles.right_link}`}>CONTACT</a>
         <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`}>RESUME</a>
       </div>
     </div>

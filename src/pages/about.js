@@ -7,6 +7,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import woody from "../images/woody.png";
+import shrek from "../images/shrek.png";
+import spiderverse from "../images/spiderverse.png";
+import findingnemo from "../images/findingnemo.png";
 
 const About = () => {
   library.add(fas);
@@ -38,20 +41,52 @@ const About = () => {
               </p>
           </div>
         </div>
-        <div className={styles.drawing_header}>
+        <div className={`${styles.drawing_header} ${styles.padding}`}>
           <h1 className={styles.header_h1}>SOME THINGS I DREW</h1>
           <FontAwesomeIcon icon={['fas', 'palette']} className={styles.icons} />
           <FontAwesomeIcon icon={['fas', 'paint-brush']} className={styles.icons} />
         </div>
         <div className={`${styles.woody_container} ${styles.padding}`}>
-          <div className={styles.image_container}>
+          <div className={styles.paint_image_container}>
             <div className={styles.woody}>
               <img src={woody} alt="woody" className={styles.image}></img>
             </div>
           </div>
           <div className={styles.description_container}>
-            <h1 className={styles.paint_text}>TOY STORY</h1>
-            <h1 className={styles.paint_text}>WOODY</h1>
+            <h1 className={styles.paint_character}>WOODY</h1>
+          </div>
+        </div>
+        <div className={`${styles.shrek_container} ${styles.padding}`}>
+          <div className={styles.description_container}>
+            <h1 className={styles.paint_character}>SHREK</h1>
+          </div>
+          <div className={styles.paint_image_container}>
+            <div className={styles.shrek}>
+              <img src={shrek} alt="shrek" className={styles.image}></img>
+            </div>
+          </div>
+        </div>
+        <div className={`${styles.spiderverse_container} ${styles.padding}`}>
+          <div className={styles.paint_image_container}>
+            <div className={styles.spiderverse}>
+              <img src={spiderverse} alt="spiderverse" className={styles.image}></img>
+            </div>
+          </div>
+          <div className={styles.description_container}>
+            <h1 className={styles.paint_character}>PETER PARKER</h1>
+            <h1 className={styles.paint_character}>MILES MORALES</h1>
+            <h1 className={styles.paint_character}>GWEN STACY</h1>
+          </div>
+        </div>
+        <div className={`${styles.findingnemo_container} ${styles.padding}`}>
+          <div className={styles.description_container}>
+            <h1 className={styles.paint_character}>MARLIN</h1>
+            <h1 className={styles.paint_character}>DORY</h1>
+          </div>
+          <div className={styles.paint_image_container}>
+            <div className={styles.findingnemo}>
+              <img src={findingnemo} alt="findingnemo" className={styles.image}></img>
+            </div>
           </div>
         </div>
         <Footer />
