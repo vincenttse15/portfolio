@@ -11,7 +11,7 @@ const Navbar = ({location}) => {
     else {
       document.getElementById("nav-home").classList.add(styles.active);
     }
-  });
+  }, [location.pathname]);
 
   return (
     <div className={`${styles.navbar} ${styles.padding}`}>
