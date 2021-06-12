@@ -7,11 +7,11 @@ import ecommerce from "../images/ecommerce.png";
 import database from "../images/database.png";
 import Footer from "../components/Footer";
 
-const IndexPage = () => {
+const IndexPage = ({location}) => {
   return (
     <body id="top">
       <main>
-        <Navbar />
+        <Navbar location={location}/>
         <div className={`${styles.home_container} ${styles.padding}`}>
           <div className={styles.home_text_container}>
             <div>

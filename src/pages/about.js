@@ -11,13 +11,13 @@ import shrek from "../images/shrek.png";
 import spiderverse from "../images/spiderverse.png";
 import findingnemo from "../images/findingnemo.png";
 
-const About = () => {
+const About = ({location}) => {
   library.add(fas);
 
   return (
     <body id="top">
       <main>
-        <Navbar />
+        <Navbar location={location}/>
         <div className={`${styles.about_container} ${styles.padding}`}>
           <div className={styles.image_container}>
             <div className={styles.vincent}>
