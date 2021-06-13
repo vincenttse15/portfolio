@@ -5,11 +5,15 @@ import { Link } from 'gatsby';
 
 const Navbar = ({location}) => {
   React.useEffect(() => {
-    if (location.pathname.includes('about')) {
-      document.getElementById("nav-about").classList.add(styles.active);
-    }
-    else {
-      document.getElementById("nav-home").classList.add(styles.active);
+    switch(location.pathname) {
+      case '/about':
+        document.getElementById('nav-about').classList.add(styles.active);
+        break;
+      case '/contact':
+        document.getElementById('nav-contact').classList.add(styles.active);
+        break;
+      default:
+        document.getElementById('nav-home').classList.add(styles.active);
     }
   }, [location.pathname]);
 
@@ -21,7 +25,7 @@ const Navbar = ({location}) => {
       <div className={styles.link_container} id="links">
         <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home">PORTFOLIO</Link>
         <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about">ABOUT</Link>
-        <a href="#contact" className={`${styles.link} ${styles.right_link}`}>CONTACT</a>
+        <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact">CONTACT</Link>
         <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`}>RESUME</a>
       </div>
     </div>

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
   library.add(fab, fas);
   return (
-    <div className={`${styles.footer_container} ${styles.padding}`} id="contact">
+    <div className={`${styles.footer_container} ${styles.padding}`}>
       <div className={styles.text_container}>
         <h1 className={styles.footer_h1}>
           CONNECT WITH ME
