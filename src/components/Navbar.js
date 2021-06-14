@@ -20,7 +20,7 @@ const Navbar = ({location}) => {
   return (
     <div className={`${styles.navbar} ${styles.padding}`}>
       <div className={styles.name}>
-        <Link to="/" className={styles.link}>VINCENT TSE</Link>
+        <Link to="/" className={styles.left_link}>VINCENT TSE</Link>
       </div>
       <div className={styles.link_container} id="links">
         <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home">PORTFOLIO</Link>

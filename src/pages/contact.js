@@ -2,9 +2,35 @@ import * as React from "react";
 import * as styles from "../styles/contact.module.scss";
 import Navbar from "../components/Navbar";
 import { ValidationError, useForm } from '@formspree/react';
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import Footer from "../components/Footer";
+
+const useStyles = makeStyles(theme => ({
+  emailField: {
+    width: "100%",
+    color: "#212121",
+  },
+  nameField: {
+    width: "47%",
+    color: "#212121",
+  },
+  button: {
+    width: "20%",
+    alignSelf: "flex-end",
+    backgroundColor: "#212121",
+    color: "#FAFAFA",
+    '&:hover': {
+      backgroundColor: "#424242",
+    }
+  },
+}));
 
 const Contact = ({ location }) => {
   const [state, handleSubmit] = useForm('mrgrkpna');
+  const classes = useStyles();
+
   return (
     <body id="top">
       <main>
@@ -13,22 +39,26 @@ const Contact = ({ location }) => {
           <h1 className={styles.contact_h1}>GET IN TOUCH</h1>
           <form onSubmit={handleSubmit} className={styles.form_container}>
             <div className={styles.name_container}>
-              <input
+              <TextField
+                required
                 type="text"
                 name="_fname"
-                placeholder="First name"
-                className={styles.name_field}
+                variant="outlined"
+                label="First name"
+                className={classes.nameField}
               />
               <ValidationError
                 prefix="First name"
                 field="_fname"
                 errors={state.errors}
               />
-              <input
+              <TextField
+                required
                 type="text"
                 name="_lname"
-                placeholder="Last name"
-                className={styles.name_field}
+                variant="outlined"
+                label="Last name"
+                className={classes.nameField}
               />
               <ValidationError
                 prefix="Last name"
@@ -36,28 +66,47 @@ const Contact = ({ location }) => {
                 errors={state.errors}
               />
             </div>
-            <input
+            <TextField
+              required
               type="email"
               name="email"
-              placeholder="Email"
+              variant="outlined"
+              label="Email"
+              className={classes.emailField}
             />
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
             />
-            <textarea
+            <TextField
+              required
               type="text"
               name="message"
+              variant="outlined"
+              label="Message"
+              multiline
+              rows={9}
             />
             <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
             />
-            <button type="submit" disabled={state.submitting}>Send message</button>
+            <Button 
+              variant="contained" 
+              type="submit" 
+              disabled={state.submitting} 
+              className={classes.button} 
+              size="large"
+              disableRipple
+            >
+              Send message
+            </Button>
           </form>
+          <div className={`${styles.divider}`}></div>
         </div>
+        <Footer />
       </main>
     </body>
   )
