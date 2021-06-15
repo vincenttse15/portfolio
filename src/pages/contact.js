@@ -31,6 +31,10 @@ const Contact = ({ location }) => {
   const [state, handleSubmit] = useForm('mrgrkpna');
   const classes = useStyles();
 
+  if (state.succeeded) {
+    window.location.reload();
+  }
+
   return (
     <body id="top">
       <main>

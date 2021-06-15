@@ -29,9 +29,9 @@ const About = ({location}) => {
             <div className={styles.divider}></div>
             <p className={styles.text}>
               Hi, I'm Vincent Tse, a software engineer based in San Jose, CA.
-              I believe that adaptability and communication are required skills to produce
-              usable applications. In May 2020, I acquired my Bachelor's Degree in Computer Science
-              from San Francisco State University where I developed these skills through course projects.
+              In May 2021, I acquired my Bachelor's Degree in Computer Science
+              from San Francisco State University with my main focus being on front-end
+              development. I also recently started becoming interested in UX/UI Design.
               </p>
             <p className={styles.text}>
               In my free time I enjoy watching movies and shows, playing games, finding new music, and drawing on MS Paint.
