@@ -77,10 +77,38 @@
   .padding {
     padding: 0px 25px;
   }
+
+  .social_image {
+    font-size: 36px;
+  }
+
+  .footer_h1 {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (max-width: 570px) {
   .padding {
     padding: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .social_image {
+    font-size: 30px;
+  }
+  
+  .footer_h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .social_image {
+    font-size: 24px;
+  }
+
+  .footer_h1 {
+    font-size: 24px;
   }
 }
