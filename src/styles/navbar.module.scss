@@ -11,8 +11,8 @@
 }
 
 .padding {
-  padding-left: 40vh;
-  padding-right: 40vh;
+  padding-left: 375px;
+  padding-right: 375px;
 }
 
 .name {
@@ -48,4 +48,48 @@
 .left_link {
   text-decoration: none;
   color: #f5f5f5;
+}
+
+@media only screen and (max-width: 1700px) {
+  .padding {
+    padding: 0px 300px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .padding {
+    padding: 0px 200px;
+  }
+}
+
+@media only screen and (max-width: 1118px) {
+  .padding {
+    padding: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .padding {
+    padding: 0px 50px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .padding {
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .padding {
+    padding: 0px 10px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .link_container {
+    display: none;
+  }
 }
