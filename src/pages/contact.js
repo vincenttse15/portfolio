@@ -12,10 +12,12 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     color: "#212121",
   },
+
   nameField: {
     width: "47%",
     color: "#212121",
   },
+
   button: {
     width: "20%",
     alignSelf: "flex-end",
@@ -23,6 +25,43 @@ const useStyles = makeStyles(theme => ({
     color: "#FAFAFA",
     '&:hover': {
       backgroundColor: "#424242",
+    }
+  },
+
+  '@media (max-width: 1445px)' : {
+    button: {
+      width: "25%",
+    }
+  },
+
+  '@media (max-width: 876px)' : {
+    button: {
+      width: "30%",
+    }
+  },
+
+  '@media (max-width: 664px)' : {
+    button: {
+      width: "35%",
+      alignSelf: "center",
+    }
+  },
+
+  '@media (max-width: 503px)' : {
+    button: {
+      width: "45%",
+    }
+  },
+
+  '@media (max-width: 395px)' : {
+    button: {
+      width: "55%",
+    }
+  },
+
+  '@media (max-width: 327px)' : {
+    button: {
+      width: "70%",
     }
   },
 }));

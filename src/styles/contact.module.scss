@@ -14,8 +14,8 @@
 
 .contact_h1 {
   font-size: 72px;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin-top: 85px;
+  margin-bottom: 43px;
 }
 
 .form_container {
@@ -58,6 +58,12 @@
   }
 }
 
+@media only screen and (max-width: 664px) {
+  .contact_h1 {
+    align-self: center;
+  }
+}
+
 @media only screen and (max-width: 610px) {
   .padding {
     padding: 0px 25px;
@@ -67,5 +73,22 @@
 @media only screen and (max-width: 570px) {
   .padding {
     padding: 0px 10px;
+  }
+
+  .contact_h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .contact_h1 {
+    font-size: 48px;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .contact_h1 {
+    font-size: 36px;
   }
 }
