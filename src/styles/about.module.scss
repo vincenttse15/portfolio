@@ -361,6 +361,10 @@
     height: 550px;
   }
 
+  .text_container {
+    width: 80%;
+  }
+
   .text_h1 {
     font-size: 18px;
   }
@@ -371,6 +375,12 @@
 
   .paint_character {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about_container {
+    height: 650px;
   }
 }
 
@@ -425,9 +435,7 @@
   .icons {
     font-size: 18px;
   }
-}
 
-@media only screen and (max-width: 280px) {
   .about_container {
     height: 600px;
   }

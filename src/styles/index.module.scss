@@ -235,32 +235,62 @@ body {
 
   .home_container {
     height: 400px;
+    align-items: center;
+  }
+
+  .home_text_container {
+    width: 60%;
   }
 
   .doremeet_container {
     flex-direction: column-reverse;
     align-items: center;
+    height: 750px;
   }
 
   .marketplace_container {
     flex-direction: column-reverse;
     align-items: center;
+    height: 750px;
   }
 
   .database_container {
     flex-direction: column-reverse;
     align-items: center;
+    height: 750px;
   }
 
   .description_container {
-    padding-left: 0px;
-    width: 100%;
+    padding: 0px;
+    width: 60%;
     min-height: 50%;
+    align-items: center;
   }
 
+  .project_description {
+    margin-bottom: 20px;
+  }
+  
   .image_container {
     width: 100%;
     height: 50%;
+    justify-content: start;
+  }
+
+  .music {
+    max-height: 40%;
+  }
+
+  .band {
+    max-height: 40%;
+  }
+
+  .marketplace {
+    max-height: 80%;
+  }
+
+  .database {
+    max-height: 50%;
   }
 }
 
@@ -276,18 +306,46 @@ body {
   .home_container {
     height: 300px;
   }
+
+  .music {
+    max-height: 35%;
+  }
+
+  .database {
+    max-height: 40%;
+  }
 }
 
-@media only screen and (max-width: 345px) {
+@media only screen and (max-width: 471px) {
+  .music {
+    max-height: 30%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .description_container {
+    width: 80%;
+  }
+
+  .home_text_container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
   .doremeet_container {
-    height: 600px;
+    height: 700px;
   }
 
-  .marketplace_container {
-    height: 600px;
+  .music {
+    max-height: 25%;
   }
 
-  .database_container {
-    height: 600px;
+  .band {
+    max-height: 35%;
+  }
+
+  .database {
+    max-height: 35%;
   }
 }
