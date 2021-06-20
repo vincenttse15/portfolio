@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Footer from "../components/Footer";
+import { globalHistory } from "@reach/router";
 
 const useStyles = makeStyles(theme => ({
   emailField: {
@@ -66,7 +67,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Contact = ({ location }) => {
+const Contact = () => {
+  const path = globalHistory.location.pathname;
   const [state, handleSubmit] = useForm('mrgrkpna');
   const classes = useStyles();
 
@@ -76,7 +78,7 @@ const Contact = ({ location }) => {
 
   return (
     <main>
-      <Navbar location={location} />
+      <Navbar path={path} />
       <div className={`${styles.container} ${styles.padding}`}>
         <h1 className={styles.contact_h1}>GET IN TOUCH</h1>
         <form onSubmit={handleSubmit} className={styles.form_container}>

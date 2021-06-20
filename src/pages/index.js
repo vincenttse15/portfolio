@@ -6,11 +6,14 @@ import band from "../images/band.png";
 import ecommerce from "../images/ecommerce.png";
 import database from "../images/database.png";
 import Footer from "../components/Footer";
+import { globalHistory } from "@reach/router";
 
-const IndexPage = ({ location }) => {
+const IndexPage = () => {
+  const path = globalHistory.location.pathname;
+
   return (
     <main>
-      <Navbar location={location} />
+      <Navbar path={path} />
       <div className={`${styles.home_container} ${styles.padding}`}>
         <div className={styles.home_text_container}>
           <div>

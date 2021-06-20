@@ -10,13 +10,16 @@ import woody from "../images/woody.png";
 import shrek from "../images/shrek.png";
 import spiderverse from "../images/spiderverse.png";
 import findingnemo from "../images/findingnemo.png";
+import { globalHistory } from "@reach/router";
 
-const About = ({ location }) => {
+const About = () => {
+  const path = globalHistory.location.pathname;
+
   library.add(fas);
 
   return (
     <main>
-      <Navbar location={location} />
+      <Navbar path={path} />
       <div className={`${styles.about_container} ${styles.padding}`}>
         <div className={styles.image_container}>
           <div className={styles.vincent}>

@@ -6,12 +6,12 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Navbar = ({ location }) => {
+const Navbar = ({ path }) => {
   library.add(fas);
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
-    switch (location.pathname) {
+    switch (path) {
       case '/about':
         document.getElementById('nav-about').classList.add(styles.active);
         break;
@@ -21,7 +21,7 @@ const Navbar = ({ location }) => {
       default:
         document.getElementById('nav-home').classList.add(styles.active);
     }
-  }, [location.pathname]);
+  }, [path]);
 
   const handleMenuClick = () => {
     if (open) {
