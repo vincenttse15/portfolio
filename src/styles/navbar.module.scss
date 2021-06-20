@@ -1,5 +1,9 @@
 @use 'theme' as *;
 
+.fixed_body {
+  position: fixed;
+}
+
 .navbar {
   height: 60px;
   display: flex;
@@ -9,6 +13,12 @@
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.navbar_active {
+  height: 100vh;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .padding {
@@ -22,10 +32,48 @@
   font-size: 18px;
 }
 
+.name_active {
+  padding-top: 19px;
+}
+
 .link_container {
   display: flex;
   font-family: $electrolize;
   font-size: 16px;
+}
+
+.link_container_active {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu_active {
+  padding-top: 17px;
+}
+
+.button {
+  background-color: #212121;
+  border-style: none;
+}
+
+.menu_button {
+  color: #f5f5f5;
+  font-size: 23px;
+}
+
+.menu_button:hover {
+  cursor: pointer;
+}
+
+.menu_button_active {
+  color: #BDBDBD;
 }
 
 .link {
@@ -40,6 +88,10 @@
 
 .right_link {
   margin-left: 30px;
+}
+
+.right_link_active {
+  margin-left: 0px;
 }
 
 .active {
@@ -75,6 +127,16 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .link_container {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 610px) {
   .padding {
     padding: 0px 25px;
@@ -84,13 +146,5 @@
 @media only screen and (max-width: 570px) {
   .padding {
     padding: 0px 10px;
-  }
-
-  .name {
-    display: none;
-  }
-
-  .link_container {
-    display: none;
   }
 }
