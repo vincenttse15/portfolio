@@ -11,6 +11,7 @@ const Navbar = ({ path }) => {
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
+    console.log(path);
     switch (path) {
       case '/about':
         document.getElementById('nav-about').classList.add(styles.active);
