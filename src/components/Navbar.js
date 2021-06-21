@@ -9,21 +9,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Navbar = ({ path }) => {
   library.add(fas);
   const [open, setOpen] = React.useState(false);
+  const [hasWindow, setHasWindow] = React.useState(false);
+  const [screenWidth, setScreenWidth] = React.useState(0);
 
-  React.useEffect(() => {
-    console.log(path);
-    switch (path) {
-      case '/vincent-tse-portfolio/about':
-        document.getElementById('nav-about').classList.add(styles.active);
-        break;
-      case '/vincent-tse-portfolio/contact':
-        document.getElementById('nav-contact').classList.add(styles.active);
-        break;
-      default:
-        document.getElementById('nav-home').classList.add(styles.active);
-    }
-  }, [path]);
-
+  const updateScreenWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  
   const handleMenuClick = () => {
     if (open) {
       setOpen(false);
@@ -60,6 +52,37 @@ const Navbar = ({ path }) => {
       document.body.style.overflow = 'visible';
     }
   };
+
+  React.useEffect(() => {
+    if (!hasWindow) {
+      setHasWindow(true);
+      updateScreenWidth();
+    }
+
+    window.addEventListener("resize", updateScreenWidth);
+
+    if (screenWidth <= 768 && open) {
+      handleMenuClick();
+    }
+
+    return () => {
+      window.removeEventListener("resize", updateScreenWidth);
+    }
+  }, [screenWidth]);
+
+  React.useEffect(() => {
+    console.log(path);
+    switch (path) {
+      case '/vincent-tse-portfolio/about':
+        document.getElementById('nav-about').classList.add(styles.active);
+        break;
+      case '/vincent-tse-portfolio/contact':
+        document.getElementById('nav-contact').classList.add(styles.active);
+        break;
+      default:
+        document.getElementById('nav-home').classList.add(styles.active);
+    }
+  }, [path]);
 
   return (
     <div className={`${styles.navbar} ${styles.padding}`} id="nav">
