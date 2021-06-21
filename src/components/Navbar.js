@@ -61,7 +61,7 @@ const Navbar = ({ path }) => {
 
     window.addEventListener("resize", updateScreenWidth);
 
-    if (screenWidth <= 768 && open) {
+    if (screenWidth > 768 && open) {
       handleMenuClick();
     }
 
