@@ -1,10 +1,6 @@
 import * as React from "react"
 import Navbar from "../components/Navbar";
 import * as styles from "../styles/index.module.scss";
-import music from "../images/music.png";
-import band from "../images/band.png";
-import ecommerce from "../images/ecommerce.png";
-import database from "../images/database.png";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
 
@@ -28,20 +24,31 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.doremeet_container} ${styles.padding}`}>
+      <div className={`${styles.ohana_container} ${styles.padding} ${styles.project_container}`}>
         <div className={styles.image_container}>
-          <div className={styles.music}>
-            <img src={music} alt="music" className={styles.image}></img>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627851942/portfolio/home/ohana-logo_cm8f4o_habss5.png" alt="band" className={styles.ohana}></img>
+        </div>
+        <div className={styles.description_container}>
+          <span className={styles.project_title}>Ohana</span>
+          <span className={styles.project_description}>
+            An application that linked hotels with influencers to market their brand.
+          </span>
+          <span className={styles.project_technology_title}>Technology</span>
+          <div className={styles.project_technology}>
+            <span>React.js</span>
+            <span>GraphQL</span>
+            <span>Redux</span>
           </div>
-          <div className={styles.band}>
-            <img src={band} alt="band" className={styles.image}></img>
-          </div>
+        </div>
+      </div>
+      <div className={`${styles.doremeet_container} ${styles.padding} ${styles.project_container}`}>
+        <div className={styles.image_container}>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849002/portfolio/home/band_msstx0.png" alt="band" className={styles.band}></img>
         </div>
         <div className={styles.description_container}>
           <span className={styles.project_title}>DoReMeet</span>
           <span className={styles.project_description}>
-            The first application I built using ReactJS with a team of six as front-end engineer.
-            This application was created to link artists by genre and meeting preference (virtual or non virtual).
+            An application that linked artists by genre and meeting preference (virtual or non virtual).
           </span>
           <span className={styles.project_technology_title}>Technology</span>
           <div className={styles.project_technology}>
@@ -52,15 +59,13 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.marketplace_container} ${styles.padding}`}>
+      <div className={`${styles.marketplace_container} ${styles.padding} ${styles.project_container}`}>
         <div className={styles.image_container}>
-          <div className={styles.marketplace}>
-            <img src={ecommerce} alt="ecommerce" className={styles.image}></img>
-          </div>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849002/portfolio/home/ecommerce_o2iisf.png" alt="ecommerce" className={styles.marketplace}></img>
         </div>
         <div className={styles.description_container}>
           <span className={styles.project_title}>Marketplace 2.0</span>
-          <span className={styles.project_description}>An e-commerce application I developed with a team of four as full-stack engineer.</span>
+          <span className={styles.project_description}>An e-commerce application.</span>
           <span className={styles.project_technology_title}>Technology</span>
           <div className={styles.project_technology}>
             <span>React.js</span>
@@ -73,17 +78,14 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.database_container} ${styles.padding}`}>
+      <div className={`${styles.database_container} ${styles.padding} ${styles.project_container}`}>
         <div className={styles.image_container}>
-          <div className={styles.database}>
-            <img src={database} alt="database" className={styles.image}></img>
-          </div>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849001/portfolio/home/database_azgjru.png" alt="database" className={styles.database}></img>
         </div>
         <div className={styles.description_container}>
           <span className={styles.project_title}>Database Project</span>
           <span className={styles.project_description}>
-            Designed a command line application from the ground up that utilizes a database created
-            in MySQL purposed for a University.
+            A command line application that utilized a database created in MySQL purposed for a University.
           </span>
           <span className={styles.project_technology_title}>Technology</span>
           <div className={styles.project_technology}>

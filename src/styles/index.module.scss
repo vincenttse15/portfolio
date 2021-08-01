@@ -46,22 +46,25 @@ body {
   color: #2296f3;
 }
 
-.doremeet_container {
-  background-color: #e3fdfb;
+.project_container {
   display: flex;
   height: 700px;
+}
+
+.doremeet_container {
+  background-color: #e3fdfb;
 }
 
 .marketplace_container {
   background-color: #E3F2FD;
-  display: flex;
-  height: 700px;
 }
 
 .database_container {
   background-color: #e3e5fd;
-  display: flex;
-  height: 700px;
+}
+
+.ohana_container {
+  background-color: #e3fdee;
 }
 
 .image_container {
@@ -107,37 +110,28 @@ body {
   flex-wrap: wrap;
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-}
-
 .marketplace {
-  display: flex;
-  max-height: 65%;
-  width: auto;
-  justify-content: center;
-}
-
-.music {
-  display: flex;
-  max-height: 30%;
-  width: auto;
-  justify-content: center;
+  max-height: 60%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .band {
-  display: flex;
-  max-height: 30%;
-  width: auto;
-  justify-content: center;
+  max-height: 50%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .database {
-  display: flex;
-  justify-content: center;
   max-height: 50%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.ohana {
+  max-height: 50%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -163,15 +157,7 @@ body {
     height: 500px;
   }
 
-  .doremeet_container {
-    height: 550px;
-  }
-
-  .marketplace_container {
-    height: 550px;
-  }
-
-  .database_container {
+  .project_container {
     height: 550px;
   }
 }
@@ -242,19 +228,7 @@ body {
     width: 60%;
   }
 
-  .doremeet_container {
-    flex-direction: column-reverse;
-    align-items: center;
-    height: 750px;
-  }
-
-  .marketplace_container {
-    flex-direction: column-reverse;
-    align-items: center;
-    height: 750px;
-  }
-
-  .database_container {
+  .project_container {
     flex-direction: column-reverse;
     align-items: center;
     height: 750px;
@@ -269,6 +243,7 @@ body {
 
   .project_description {
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .image_container {
@@ -277,20 +252,13 @@ body {
     justify-content: start;
   }
 
-  .music {
-    max-height: 40%;
-  }
-
   .band {
     max-height: 40%;
   }
 
-  .marketplace {
-    max-height: 80%;
-  }
-
-  .database {
-    max-height: 50%;
+  .ohana {
+    max-width: 70%;
+    align-self: center;
   }
 }
 
@@ -307,18 +275,8 @@ body {
     height: 300px;
   }
 
-  .music {
-    max-height: 35%;
-  }
-
   .database {
     max-height: 40%;
-  }
-}
-
-@media only screen and (max-width: 471px) {
-  .music {
-    max-height: 30%;
   }
 }
 
@@ -332,20 +290,3 @@ body {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .doremeet_container {
-    height: 700px;
-  }
-
-  .music {
-    max-height: 25%;
-  }
-
-  .band {
-    max-height: 35%;
-  }
-
-  .database {
-    max-height: 35%;
-  }
-}

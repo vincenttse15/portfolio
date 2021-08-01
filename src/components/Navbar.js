@@ -71,7 +71,6 @@ const Navbar = ({ path }) => {
   }, [screenWidth]);
 
   React.useEffect(() => {
-    console.log(path);
     switch (path) {
       case '/vincent-tse-portfolio/about':
         document.getElementById('nav-about').classList.add(styles.active);
