@@ -35,9 +35,10 @@ const IndexPage = () => {
           </span>
           <span className={styles.project_technology_title}>Technology</span>
           <div className={styles.project_technology}>
-            <span>React.js</span>
+            <span>Next.js</span>
             <span>GraphQL</span>
             <span>Redux</span>
+            <span>Apollo</span>
           </div>
         </div>
       </div>
