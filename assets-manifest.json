@@ -1,13 +1,5 @@
 {
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
-  "static/Vincent_Tse_Resume.pdf": "static/Vincent_Tse_Resume-a5e89b6a45794c7ecee3d9e9b7ba0035.pdf",
-  "static/band.png": "static/band-3821d07944109d7dd51286eff64ee373.png",
-  "static/database.png": "static/database-1dc2631b700f5f1688c411c5fd5e2503.png",
-  "static/ecommerce.png": "static/ecommerce-dd03cccb2f19dd982a64994636dffef5.png",
-  "static/music.png": "static/music-920582f0fa56644dbc9a5310cfd36a13.png",
-  "static/shrek.png": "static/shrek-4acfeb412a40709b5b3937b7144d6f0f.png",
-  "static/spiderverse.png": "static/spiderverse-ebbd6860cd71c995e06e488bb47edc49.png",
-  "static/vincent.jpeg": "static/vincent-32152901a85ad4ab739d18b7036fb99e.jpeg",
-  "static/woody.png": "static/woody-04d0b2506bc336c424cc28bdb90a4df2.png"
+  "static/Vincent_Tse_Resume.pdf": "static/Vincent_Tse_Resume-a5e89b6a45794c7ecee3d9e9b7ba0035.pdf"
 }
