@@ -72,10 +72,10 @@ const Navbar = ({ path }) => {
 
   React.useEffect(() => {
     switch (path) {
-      case '/vincent-tse-portfolio/about':
+      case '/portfolio/about':
         document.getElementById('nav-about').classList.add(styles.active);
         break;
-      case '/vincent-tse-portfolio/contact':
+      case '/portfolio/contact':
         document.getElementById('nav-contact').classList.add(styles.active);
         break;
       default:
