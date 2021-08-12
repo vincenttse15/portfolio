@@ -134,6 +134,19 @@ body {
   object-fit: contain;
 }
 
+.project_link {
+  color: #212121;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: color 0.25s;
+  height: 20px;
+  width: 20px;
+}
+
+.project_link:hover {
+  color: #2296f3;
+}
+
 @media only screen and (max-width: 1700px) {
   .padding {
     padding: 0px 300px;

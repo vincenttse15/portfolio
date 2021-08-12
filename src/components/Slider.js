@@ -56,7 +56,7 @@ const Slider = () => {
         <FontAwesomeIcon icon={['fas', 'chevron-right']} className={styles.icon} />
       </button>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         navigation={{
           nextEl: nextRef.current ? nextRef.current : undefined,
           prevEl: prevRef.current ? prevRef.current : undefined,
@@ -69,6 +69,10 @@ const Slider = () => {
         cssMode={false}
         className={styles.swiperContainer}
         spaceBetween={15}
+        centeredSlides={true}
+        slideToClickedSlide={true}
+        loop={true}
+        slidesPerGroup={1}
       >
         {slides.map((slide, index) => (
           <SwiperSlide virtualIndex={index} className={`${styles.slideContainer} ${selectedTab.key === slide.key ? `${styles.activeSlide}` : ''}`} >
