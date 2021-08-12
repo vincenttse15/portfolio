@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import * as styles from "../styles/index.module.scss";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
-
+import { motion } from "framer-motion";
 const IndexPage = () => {
   const path = globalHistory.location.pathname;
 
@@ -12,15 +12,23 @@ const IndexPage = () => {
       <Navbar path={path} />
       <div className={`${styles.home_container} ${styles.padding}`}>
         <div className={styles.home_text_container}>
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1.0 }}
+            transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1] }}
+          >
             <h1 className={styles.home_h1}>
-              HI, I'M <span className={styles.home_highlight}>VINCENT</span>.
+              HI, I'M <motion.span className={styles.home_highlight} initial={{ opacity: 0 }} animate={{ opacity: 1.0 }} transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1], delay: 0.5 }}>VINCENT</motion.span>
             </h1>
-          </div>
+          </motion.div>
           <div>
-            <h2 className={styles.home_h2}>
+            <motion.h2 className={styles.home_h2}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1.0 }}
+              transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1], delay: 1 }}
+            >
               I'm a <span className={styles.home_highlight}>Software Engineer</span> and a recent graduate from San Francisco State University.
-            </h2>
+            </motion.h2>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from "framer-motion";
 
 const Navbar = ({ path }) => {
   library.add(fas);
@@ -84,24 +85,30 @@ const Navbar = ({ path }) => {
   }, [path]);
 
   return (
-    <div className={`${styles.navbar} ${styles.padding}`} id="nav">
-      <div className={styles.name} id="name">
-        <Link to="/" className={styles.left_link}>VINCENT TSE</Link>
-      </div>
+    <motion.div
+      initial={{ y: "-60px"}}
+      animate={{ y: "0px"}}
+      transition={{ ease: [0.4, 0.0, 0.2, 0.1]}}
+    >
+      <div className={`${styles.navbar} ${styles.padding}`} id="nav">
+        <div className={styles.name} id="name">
+          <Link to="/" className={styles.left_link}>VINCENT TSE</Link>
+        </div>
 
-      <div className={styles.menu} id="menu">
-        <button type="button" className={styles.button} onClick={handleMenuClick}>
-          <FontAwesomeIcon icon={['fas', 'bars']} className={styles.menu_button} id="menu-button"/>
-        </button>
-      </div>
+        <div className={styles.menu} id="menu">
+          <button type="button" className={styles.button} onClick={handleMenuClick}>
+            <FontAwesomeIcon icon={['fas', 'bars']} className={styles.menu_button} id="menu-button"/>
+          </button>
+        </div>
 
-      <div className={styles.link_container} id="link-container">
-        <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick}>PORTFOLIO</Link>
-        <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick}>ABOUT</Link>
-        <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick}>CONTACT</Link>
-        <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`} id="nav-resume" onClick={handleLinkClick}>RESUME</a>
+        <div className={styles.link_container} id="link-container">
+          <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick}>PORTFOLIO</Link>
+          <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick}>ABOUT</Link>
+          <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick}>CONTACT</Link>
+          <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`} id="nav-resume" onClick={handleLinkClick}>RESUME</a>
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
