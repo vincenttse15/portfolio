@@ -23,14 +23,14 @@ const IndexPage = () => {
             transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1] }}
           >
             <h1 className={styles.home_h1}>
-              HI, I'M <motion.span className={styles.home_highlight} initial={{ opacity: 0 }} animate={{ opacity: 1.0 }} transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1], delay: 0.5 }}>VINCENT</motion.span>
+              HI, I'M <span className={styles.home_highlight}>VINCENT</span>
             </h1>
           </motion.div>
           <div>
             <motion.h2 className={styles.home_h2}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1.0 }}
-              transition={{ "easeIn": [0.4, 0.0, 0.2, 0.1], delay: 1 }}
+              transition={{ "easeIn": [0.4, 0.0, 1, 1], delay: 0.10 }}
             >
               I'm a <span className={styles.home_highlight}>Software Engineer</span> and a recent graduate from San Francisco State University.
             </motion.h2>
