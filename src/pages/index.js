@@ -4,13 +4,9 @@ import * as styles from "../styles/index.module.scss";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
 import { motion } from "framer-motion";
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 
 const IndexPage = () => {
   const path = globalHistory.location.pathname;
-  library.add(fas);
 
   return (
     <main>
@@ -53,9 +49,7 @@ const IndexPage = () => {
             <span>Redux</span>
             <span>Apollo</span>
           </div>
-          <a href="https://ohana.io/" target="_blank" rel="noreferrer" className={styles.project_link}>
-            <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
-          </a>
+          <a href="https://ohana.io/" target="_blank" rel="noreferrer" className={styles.project_link}>View page</a>
         </div>
       </div>
       <div className={`${styles.doremeet_container} ${styles.padding} ${styles.project_container}`}>

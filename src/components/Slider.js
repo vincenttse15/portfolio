@@ -40,19 +40,42 @@ const Slider = () => {
   ];
 
   const [selectedTab, setSelectedTab] = React.useState(urls[0]);
-
   const slides = urls.map((url, index) => (
-    <img key={url.key} className={styles.thumbnail} alt="paint" src={url.url} onClick={() => setSelectedTab(url)} />
+    <img 
+      key={url.key} 
+      className={styles.thumbnail} 
+      alt="paint" 
+      src={url.url} 
+      onClick={() => {
+        setSelectedTab(url);
+      }} 
+    />
   ));
 
   return (
     <>
     <img src={selectedTab.url} alt="big paint" className={styles.bigImage} />
     <div className={styles.container}>
-      <button type="button" ref={prevRef} className={`${styles.button} ${styles.left}`}>
+      <button 
+        type="button" 
+        ref={prevRef} 
+        className={`${styles.button} ${styles.left}`} 
+        onClick={() => {
+          const swiper = document.querySelector('.swiper-container').swiper;
+          swiper.slides[swiper.activeIndex].children[0].click();
+        }}
+      >
         <FontAwesomeIcon icon={['fas', 'chevron-left']} className={styles.icon} />
       </button>
-      <button type="button" ref={nextRef} className={`${styles.button} ${styles.right}`}>
+      <button 
+        type="button" 
+        ref={nextRef} 
+        className={`${styles.button} ${styles.right}`}
+        onClick={() => {
+          const swiper = document.querySelector('.swiper-container').swiper;
+          swiper.slides[swiper.activeIndex].children[0].click();
+        }}
+      >
         <FontAwesomeIcon icon={['fas', 'chevron-right']} className={styles.icon} />
       </button>
       <Swiper
