@@ -26,16 +26,36 @@ const IndexPage = () => {
             <motion.h2 className={styles.home_h2}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1.0 }}
-              transition={{ "easeIn": [0.4, 0.0, 1, 1], delay: 0.10 }}
+              transition={{ "easeIn": [0.4, 0.0, 1, 1], delay: 0.15 }}
             >
               I'm a <span className={styles.home_highlight}>Software Engineer</span> and a recent graduate from San Francisco State University.
             </motion.h2>
           </div>
         </div>
       </div>
+      <div className={`${styles.nerd_darts_container} ${styles.padding} ${styles.project_container}`}>
+        <div className={styles.image_container}>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1630454515/portfolio/home/nerd-darts_rczjlm.png" alt="nerd darts" className={styles.ohana}></img>
+        </div>
+        <div className={styles.description_container}>
+          <span className={styles.project_title}>Nerd Darts</span>
+          <span className={styles.project_description}>
+            An application that helps gamers who play VALORANT.
+          </span>
+          <span className={styles.project_technology_title}>Technology</span>
+          <div className={styles.project_technology}>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Heroku</span>
+            <span>TypeScript</span>
+          </div>
+          <a href="https://nerddarts.herokuapp.com/" target="_blank" rel="noreferrer" className={styles.project_link}>View page</a>
+        </div>
+      </div>
       <div className={`${styles.ohana_container} ${styles.padding} ${styles.project_container}`}>
         <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627851942/portfolio/home/ohana-logo_cm8f4o_habss5.png" alt="band" className={styles.ohana}></img>
+          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627851942/portfolio/home/ohana-logo_cm8f4o_habss5.png" alt="ohana" className={styles.ohana}></img>
         </div>
         <div className={styles.description_container}>
           <span className={styles.project_title}>Ohana</span>
@@ -67,6 +87,7 @@ const IndexPage = () => {
             <span>Node.js</span>
             <span>JavaScript</span>
             <span>Express.js</span>
+            <span>AWS</span>
           </div>
         </div>
       </div>
