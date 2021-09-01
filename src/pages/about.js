@@ -36,7 +36,7 @@ const About = () => {
             <a href="https://ohana.io" target="_blank" rel="noreferrer" className={styles.link}>Ohana</a> as a frontend engineer, and deployed a side project called
             {' '}
             <a href="https://nerddarts.herokuapp.com/" target="_blank" rel="noreferrer" className={styles.link}>Nerd Darts</a> in a full stack capacity with a friend.
-            Nerd Darts is the result of combining two of my main interests web development and gaming. I also enjoy watching movies and shows, finding new music, and drawing
+            Nerd Darts is the result of combining two of my interests web development and gaming. I also enjoy watching movies and shows, finding new music, and drawing
             on Microsoft Paint!
           </p>
           <p>
@@ -47,9 +47,17 @@ const About = () => {
         </div>
         <div className={styles.divider} />
       </div>
-      <div className={`${styles.paint_container} ${styles.padding}`}>
+      <div className={`${styles.paint_container_desktop} ${styles.padding}`}>
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/woody_zfvluo.png")}
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/shrek_adivxs.png")}
+        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/spiderverse_jrcykf.png")}
+        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/findingnemo_audhvx.png")}
+      </div>
+      <div className={`${styles.paint_container_mobile} ${styles.padding}`}>
+        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/woody_zfvluo.png")}
+        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/shrek_adivxs.png")}
+      </div>
+      <div className={`${styles.paint_container_mobile} ${styles.padding}`}>
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/spiderverse_jrcykf.png")}
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/findingnemo_audhvx.png")}
       </div>
