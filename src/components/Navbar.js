@@ -105,10 +105,10 @@ const Navbar = ({ path }) => {
         </div>
 
         <div className={styles.link_container} id="link-container">
-          <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick}>PORTFOLIO</Link>
-          <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick}>ABOUT</Link>
-          <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick}>CONTACT</Link>
-          <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`} id="nav-resume" onClick={handleLinkClick}>RESUME</a>
+          <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick}>Portfolio</Link>
+          <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick}>About</Link>
+          <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick}>Contact</Link>
+          <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`} id="nav-resume" onClick={handleLinkClick}>Resume</a>
         </div>
       </div>
     </motion.div>
