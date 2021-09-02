@@ -91,9 +91,6 @@ const Navbar = ({ path }) => {
       transition={{ ease: [0.4, 0.0, 0.2, 0.1]}}
     >
       <div className={`${styles.navbar} ${styles.padding}`} id="nav">
-        {/* <div className={styles.name} id="name">
-          <Link to="/" className={styles.left_link}>VINCENT TSE</Link>
-        </div> */}
         <Link to="/" className={styles.left_link}>
           <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1630459016/portfolio/home/logo2_fkrx1z.svg" alt="logo" className={styles.svg} />
         </Link>
