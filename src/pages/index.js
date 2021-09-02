@@ -40,7 +40,7 @@ const IndexPage = () => {
         <div className={styles.description_container}>
           <span className={styles.project_title}>Nerd Darts</span>
           <span className={styles.project_description}>
-            An application that helps gamers who play VALORANT.
+            An application that helps people who play the massive multiplayer online video game VALORANT.
           </span>
           <span className={styles.project_technology_title}>Technology</span>
           <div className={styles.project_technology}>
