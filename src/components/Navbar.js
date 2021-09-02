@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as styles from "../styles/navbar.module.scss";
-import PDF from '../resume/Vincent_Tse_Resume.pdf';
+import PDF from '../resume/Resume.pdf';
 import { Link } from 'gatsby';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
