@@ -23,7 +23,6 @@ const Navbar = ({ path }) => {
       document.getElementById('menu-button').classList.remove(styles.menu_button_active);
       document.getElementById('link-container').classList.remove(styles.link_container_active);
       document.getElementById('nav').classList.remove(styles.navbar_active);
-      document.getElementById('name').classList.remove(styles.name_active);
       document.getElementById('menu').classList.remove(styles.menu_active);
       document.body.style.overflow = 'visible';
 
@@ -37,7 +36,6 @@ const Navbar = ({ path }) => {
       document.getElementById('menu-button').classList.add(styles.menu_button_active);
       document.getElementById('link-container').classList.add(styles.link_container_active);
       document.getElementById('nav').classList.add(styles.navbar_active);
-      document.getElementById('name').classList.add(styles.name_active);
       document.getElementById('menu').classList.add(styles.menu_active);
       document.body.style.overflow = 'hidden';
 
