@@ -1,24 +1,13 @@
 @use 'theme' as *;
 
-.fixed_body {
-  position: fixed;
-}
-
-.navbar_hidden {
-  top: -60px;
-}
-
 .navbar {
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #212121;
-  position: sticky;
-  top: 0;
   z-index: 999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  transition: top 0.3s;
 }
 
 .navbar_active {

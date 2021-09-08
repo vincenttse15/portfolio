@@ -47,17 +47,11 @@ const About = () => {
         </div>
         <div className={styles.divider} />
       </div>
-      <div className={`${styles.paint_container_desktop} ${styles.padding}`}>
-        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/woody_zfvluo.png")}
-        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/shrek_adivxs.png")}
-        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/spiderverse_jrcykf.png")}
-        {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/findingnemo_audhvx.png")}
-      </div>
-      <div className={`${styles.paint_container_mobile} ${styles.padding}`}>
+      <div className={`${styles.paint_container} ${styles.padding}`}>
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/woody_zfvluo.png")}
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/shrek_adivxs.png")}
       </div>
-      <div className={`${styles.paint_container_mobile} ${styles.padding}`}>
+      <div className={`${styles.paint_container} ${styles.padding}`}>
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/spiderverse_jrcykf.png")}
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/findingnemo_audhvx.png")}
       </div>
