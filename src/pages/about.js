@@ -3,6 +3,7 @@ import * as styles from "../styles/about.module.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
+import JumpToTop from "../components/JumpToTop";
 
 const paint = (url) => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
   return (
     <main>
       <Navbar path={path} />
+      <JumpToTop />
       <div className={`${styles.about_container} ${styles.padding}`}>
         <div className={styles.header}>
           <h1 className={styles.about_h1}>ABOUT ME</h1>

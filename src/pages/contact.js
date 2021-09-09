@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
+import JumpToTop from "../components/JumpToTop";
 
 const useStyles = makeStyles(theme => ({
   emailField: {
@@ -79,6 +80,7 @@ const Contact = () => {
   return (
     <main>
       <Navbar path={path} />
+      <JumpToTop />
       <div className={`${styles.container} ${styles.padding}`}>
         <h1 className={styles.contact_h1}>GET IN TOUCH</h1>
         <form onSubmit={handleSubmit} className={styles.form_container}>
