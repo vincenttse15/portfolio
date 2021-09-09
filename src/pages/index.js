@@ -4,6 +4,7 @@ import * as styles from "../styles/index.module.scss";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
 import { motion } from "framer-motion";
+import JumpToTop from "../components/JumpToTop";
 
 const IndexPage = () => {
   const path = globalHistory.location.pathname;
@@ -11,6 +12,7 @@ const IndexPage = () => {
   return (
     <main>
       <Navbar path={path} />
+      <JumpToTop />
       <div className={`${styles.home_container} ${styles.padding}`}>
         <div className={styles.home_text_container}>
           <motion.div
