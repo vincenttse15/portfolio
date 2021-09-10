@@ -42,7 +42,7 @@ const Test = () => {
         link="https://ohana.io"
         name="ohana"
         title="Ohana"
-        detail="Jun 2021 - Jul 2021 · Frontend Engineer Intern"
+        detail="Jun 2021 - Jul 2021 · Internship"
         description="An application that links hotels with influencers to market their brand."
       />
       <Project
@@ -51,7 +51,7 @@ const Test = () => {
         link="https://nerddarts.herokuapp.com"
         name="nerd darts"
         title="Nerd Darts"
-        detail="Apr 2021 - Present · Fullstack"
+        detail="Apr 2021 - Present · Side Project"
         description="An application that helps people who play the massive multiplayer online video game VALORANT."
       />
       <Footer />
