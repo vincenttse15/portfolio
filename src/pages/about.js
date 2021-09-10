@@ -58,7 +58,7 @@ const About = () => {
         {paint("https://res.cloudinary.com/drlylnzt8/image/upload/v1627848984/portfolio/about/findingnemo_audhvx.png")}
       </div>
       <div className={styles.padding}>
-        <div className={styles.divider} style={{ marginTop: "50px"}}/>
+        <div className={styles.divider} style={{ marginTop: "50px", marginBottom: "0px"}}/>
       </div>
       <Footer />
     </main>
