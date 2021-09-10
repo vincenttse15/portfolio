@@ -3,6 +3,9 @@
 .container {
   display: flex;
   height: 600px;
+  font-family: $lato;
+  color: $gray-900;
+  margin-bottom: 100px;
 }
 
 .padding {
@@ -24,6 +27,7 @@
 
 .mobile {
   height: 100%;
+  width: 300px;
   object-fit: contain;
   @include box-shadow-1;
   border-radius: 8px;
@@ -32,6 +36,55 @@
 .mobile:hover {
   @include box-shadow-3;
   cursor: pointer;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 200px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 900;
+}
+
+.detail {
+  font-size: 20px;
+  color: #98a8b4;
+  font-weight: 400;
+  margin: 0;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #78848d;
+  margin: 0;
+}
+
+.link {
+  font-family: $source-code-pro;
+  display: flex;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 100px;
+  text-align: center;
+  background-color: #EEEEEE;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link:hover {
+  @include box-shadow-3;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -57,7 +110,6 @@
     padding: 0px 50px;
   }
 }
-
 
 @media only screen and (max-width: 610px) {
   .padding {

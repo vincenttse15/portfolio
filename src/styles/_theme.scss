@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
 
 $electrolize: 'Electrolize', sans-serif;
-$lexendzetta: 'Lexend Zetta', sans-serif;
 $lato: 'Lato', sans-serif;
 $poppins: 'Poppins', sans-serif;
-$maven: 'Maven Pro', sans-serif;
+$source-code-pro: 'Source Code Pro', monospace;
 
 $gray-50: #FAFAFA;
 $gray-900: #212121;
@@ -16,6 +14,7 @@ $blue: #2296f3;
 $blue-900: #01579B;
 $blue-gray-800: #37474F;
 $gray-300: #E0E0E0;
+$ohana-blue: #0088ff;
 
 @mixin box-shadow-1 {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;

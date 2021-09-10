@@ -37,8 +37,22 @@ const Test = () => {
         </div>
       </div>
       <Project 
-        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631222494/portfolio/home/ohana_mobile_cypkq6.png" 
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631249394/portfolio/home/ohana_mobile_yig0ml.png" 
         desktop= "https://res.cloudinary.com/drlylnzt8/image/upload/v1631222500/portfolio/home/ohana_desktop_eyzayq.png"
+        link="https://ohana.io"
+        name="ohana"
+        title="Ohana"
+        detail="Jun 2021 - Jul 2021 · Frontend Engineer Intern"
+        description="An application that links hotels with influencers to market their brand."
+      />
+      <Project
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631249110/portfolio/home/nerddarts_mobile_s6hrur.png"
+        desktop="https://res.cloudinary.com/drlylnzt8/image/upload/v1631248955/portfolio/home/nerddarts_laptop_qis1cv.png"
+        link="https://nerddarts.herokuapp.com"
+        name="nerd darts"
+        title="Nerd Darts"
+        detail="Apr 2021 - Present · Fullstack"
+        description="An application that helps people who play the massive multiplayer online video game VALORANT."
       />
       <Footer />
     </main>
