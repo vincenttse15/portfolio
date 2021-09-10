@@ -1,0 +1,72 @@
+@use 'theme' as *;
+
+.container {
+  display: flex;
+  height: 600px;
+}
+
+.padding {
+  padding-left: 375px;
+  padding-right: 375px;
+}
+
+.desktop {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  @include box-shadow-1;
+}
+
+.desktop:hover {
+  @include box-shadow-3;
+  cursor: pointer;
+}
+
+.mobile {
+  height: 100%;
+  object-fit: contain;
+  @include box-shadow-1;
+  border-radius: 8px;
+}
+
+.mobile:hover {
+  @include box-shadow-3;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1700px) {
+  .padding {
+    padding: 0px 300px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .padding {
+    padding: 0px 200px;
+  }
+}
+
+@media only screen and (max-width: 1118px) {
+  .padding {
+    padding: 0px 100px;
+  }
+}
+
+@media only screen and (max-width: 813px) {
+  .padding {
+    padding: 0px 50px;
+  }
+}
+
+
+@media only screen and (max-width: 610px) {
+  .padding {
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .padding {
+    padding: 0px 10px;
+  }
+}
