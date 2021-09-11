@@ -1,6 +1,6 @@
 import * as React from "react"
 import Navbar from "../components/Navbar";
-import * as styles from "../styles/index.module.scss";
+import * as styles from "../styles/test.module.scss";
 import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
 import { motion } from "framer-motion";
@@ -37,8 +37,8 @@ const Test = () => {
         </div>
       </div>
       <Project 
-        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631249394/portfolio/home/ohana_mobile_yig0ml.png" 
-        desktop= "https://res.cloudinary.com/drlylnzt8/image/upload/v1631222500/portfolio/home/ohana_desktop_eyzayq.png"
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631308936/portfolio/home/ohana_mobile_gcyw4n.png" 
+        desktop= "https://res.cloudinary.com/drlylnzt8/image/upload/v1631316326/portfolio/home/ohana_desktop_ss_feu7x9.png"
         link="https://ohana.io"
         name="ohana"
         title="Ohana"
@@ -46,8 +46,8 @@ const Test = () => {
         description="An application that links hotels with influencers to market their brand."
       />
       <Project
-        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631249110/portfolio/home/nerddarts_mobile_s6hrur.png"
-        desktop="https://res.cloudinary.com/drlylnzt8/image/upload/v1631248955/portfolio/home/nerddarts_laptop_qis1cv.png"
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631309514/portfolio/home/nerddarts_mobile_w88884.png"
+        desktop="https://res.cloudinary.com/drlylnzt8/image/upload/v1631316662/portfolio/home/nerddarts_desktop_ss_lqbw5m.png"
         link="https://nerddarts.herokuapp.com"
         name="nerd darts"
         title="Nerd Darts"

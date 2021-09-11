@@ -2,10 +2,11 @@
 
 .container {
   display: flex;
-  height: 600px;
+  height: auto;
   font-family: $lato;
   color: $gray-900;
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .padding {
@@ -26,15 +27,11 @@
 }
 
 .mobile {
-  height: 100%;
-  width: 300px;
-  object-fit: contain;
-  @include box-shadow-1;
-  border-radius: 8px;
+  width: 410px;
+  object-fit: cover;
 }
 
 .mobile:hover {
-  @include box-shadow-3;
   cursor: pointer;
 }
 
@@ -91,6 +88,10 @@
   .padding {
     padding: 0px 300px;
   }
+  
+  .text_container {
+    margin-left: 100px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -111,6 +112,18 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .text_container {
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+}
+
 @media only screen and (max-width: 610px) {
   .padding {
     padding: 0px 25px;
@@ -120,5 +133,11 @@
 @media only screen and (max-width: 570px) {
   .padding {
     padding: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mobile {
+    width: 100%;
   }
 }
