@@ -13,7 +13,7 @@ const Project = (props) => {
     detail,
   } = props;
 
-  const [isDesktop, setIsDesktop] = React.useState(true);
+  const [isDesktop, setIsDesktop] = React.useState(false);
   let color = null;
 
   if (name === "ohana") color = "#0088ff"
