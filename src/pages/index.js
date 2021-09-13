@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { globalHistory } from "@reach/router";
 import { motion } from "framer-motion";
 import JumpToTop from "../components/JumpToTop";
+import Project from "../components/Project";
 
 const IndexPage = () => {
   const path = globalHistory.location.pathname;
@@ -35,100 +36,24 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.nerd_darts_container} ${styles.padding} ${styles.project_container}`}>
-        <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1630454515/portfolio/home/nerd-darts_rczjlm.png" alt="nerd darts" className={styles.ohana}></img>
-        </div>
-        <div className={styles.description_container}>
-          <span className={styles.project_title}>Nerd Darts</span>
-          <span className={styles.project_description}>
-            An application that helps people who play the massive multiplayer online video game VALORANT.
-          </span>
-          <span className={styles.project_technology_title}>Technology</span>
-          <div className={styles.project_technology}>
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
-            <span>Heroku</span>
-            <span>TypeScript</span>
-          </div>
-          <a href="https://nerddarts.herokuapp.com/" target="_blank" rel="noreferrer" className={styles.project_link}>View page</a>
-        </div>
-      </div>
-      <div className={`${styles.ohana_container} ${styles.padding} ${styles.project_container}`}>
-        <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627851942/portfolio/home/ohana-logo_cm8f4o_habss5.png" alt="ohana" className={styles.ohana}></img>
-        </div>
-        <div className={styles.description_container}>
-          <span className={styles.project_title}>Ohana</span>
-          <span className={styles.project_description}>
-            An application that linked hotels with influencers to market their brand.
-          </span>
-          <span className={styles.project_technology_title}>Technology</span>
-          <div className={styles.project_technology}>
-            <span>Next.js</span>
-            <span>GraphQL</span>
-            <span>Redux</span>
-            <span>Apollo</span>
-          </div>
-          <a href="https://ohana.io/" target="_blank" rel="noreferrer" className={styles.project_link}>View page</a>
-        </div>
-      </div>
-      <div className={`${styles.doremeet_container} ${styles.padding} ${styles.project_container}`}>
-        <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849002/portfolio/home/band_msstx0.png" alt="band" className={styles.band}></img>
-        </div>
-        <div className={styles.description_container}>
-          <span className={styles.project_title}>DoReMeet</span>
-          <span className={styles.project_description}>
-            An application that linked artists by genre and meeting preference (virtual or non virtual).
-          </span>
-          <span className={styles.project_technology_title}>Technology</span>
-          <div className={styles.project_technology}>
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>JavaScript</span>
-            <span>Express.js</span>
-            <span>AWS</span>
-          </div>
-        </div>
-      </div>
-      <div className={`${styles.marketplace_container} ${styles.padding} ${styles.project_container}`}>
-        <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849002/portfolio/home/ecommerce_o2iisf.png" alt="ecommerce" className={styles.marketplace}></img>
-        </div>
-        <div className={styles.description_container}>
-          <span className={styles.project_title}>Marketplace 2.0</span>
-          <span className={styles.project_description}>An e-commerce application.</span>
-          <span className={styles.project_technology_title}>Technology</span>
-          <div className={styles.project_technology}>
-            <span>React.js</span>
-            <span>TypeScript</span>
-            <span>JavaScript</span>
-            <span>Redux</span>
-            <span>MongoDB</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-          </div>
-        </div>
-      </div>
-      <div className={`${styles.database_container} ${styles.padding} ${styles.project_container}`}>
-        <div className={styles.image_container}>
-          <img src="https://res.cloudinary.com/drlylnzt8/image/upload/v1627849001/portfolio/home/database_azgjru.png" alt="database" className={styles.database}></img>
-        </div>
-        <div className={styles.description_container}>
-          <span className={styles.project_title}>Database Project</span>
-          <span className={styles.project_description}>
-            A command line application that utilized a database created in MySQL purposed for a University.
-          </span>
-          <span className={styles.project_technology_title}>Technology</span>
-          <div className={styles.project_technology}>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MySQL</span>
-          </div>
-        </div>
-      </div>
+      <Project 
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631308936/portfolio/home/ohana_mobile_gcyw4n.png" 
+        desktop= "https://res.cloudinary.com/drlylnzt8/image/upload/v1631316326/portfolio/home/ohana_desktop_ss_feu7x9.png"
+        link="https://ohana.io"
+        name="ohana"
+        title="Ohana"
+        detail="Jun 2021 - Jul 2021 · Internship"
+        description="An application that links hotels with influencers to market their brand."
+      />
+      <Project
+        mobile="https://res.cloudinary.com/drlylnzt8/image/upload/v1631309514/portfolio/home/nerddarts_mobile_w88884.png"
+        desktop="https://res.cloudinary.com/drlylnzt8/image/upload/v1631316662/portfolio/home/nerddarts_desktop_ss_lqbw5m.png"
+        link="https://nerddarts.herokuapp.com"
+        name="nerd darts"
+        title="Nerd Darts"
+        detail="Apr 2021 - Present · Side Project"
+        description="An application that helps people who play the massive multiplayer online video game VALORANT."
+      />
       <Footer />
     </main>
   )
