@@ -2,17 +2,15 @@ import * as React from "react"
 import Navbar from "../components/Navbar";
 import * as styles from "../styles/index.module.scss";
 import Footer from "../components/Footer";
-import { globalHistory } from "@reach/router";
 import { motion } from "framer-motion";
 import JumpToTop from "../components/JumpToTop";
 import Project from "../components/Project";
 
 const IndexPage = () => {
-  const path = globalHistory.location.pathname;
 
   return (
     <main>
-      <Navbar path={path} />
+      <Navbar />
       <JumpToTop />
       <div className={`${styles.home_container} ${styles.padding}`}>
         <div className={styles.home_text_container}>

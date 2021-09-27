@@ -7,7 +7,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from "framer-motion";
 
-const Navbar = ({ path }) => {
+const Navbar = () => {
   library.add(fas);
   const [open, setOpen] = React.useState(false);
   const [hasWindow, setHasWindow] = React.useState(false);
@@ -69,19 +69,6 @@ const Navbar = ({ path }) => {
     }
   }, [screenWidth]);
 
-  React.useEffect(() => {
-    switch (path) {
-      case '/portfolio/about':
-        document.getElementById('nav-about').classList.add(styles.active);
-        break;
-      case '/portfolio/contact':
-        document.getElementById('nav-contact').classList.add(styles.active);
-        break;
-      default:
-        document.getElementById('nav-home').classList.add(styles.active);
-    }
-  }, [path]);
-
   return (
     <motion.div
       initial={{ y: "-60px"}}
@@ -100,9 +87,9 @@ const Navbar = ({ path }) => {
         </div>
 
         <div className={styles.link_container} id="link-container">
-          <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick}>Portfolio</Link>
-          <Link to="/about" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick}>About</Link>
-          <Link to="/contact" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick}>Contact</Link>
+          <Link to="/" className={`${styles.link} ${styles.right_link}`} id="nav-home" onClick={handleLinkClick} activeClassName={styles.active}>Portfolio</Link>
+          <Link to="/about/" className={`${styles.link} ${styles.right_link}`} id="nav-about" onClick={handleLinkClick} activeClassName={styles.active}>About</Link>
+          <Link to="/contact/" className={`${styles.link} ${styles.right_link}`} id="nav-contact" onClick={handleLinkClick} activeClassName={styles.active}>Contact</Link>
           <a href={PDF} target="_blank" rel="noreferrer" className={`${styles.link} ${styles.right_link}`} id="nav-resume" onClick={handleLinkClick}>Resume</a>
         </div>
       </div>

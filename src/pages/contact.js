@@ -69,7 +69,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Contact = () => {
-  const path = globalHistory.location.pathname;
   const [state, handleSubmit] = useForm('mrgrkpna');
   const classes = useStyles();
 
@@ -79,7 +78,7 @@ const Contact = () => {
 
   return (
     <main>
-      <Navbar path={path} />
+      <Navbar />
       <JumpToTop />
       <div className={`${styles.container} ${styles.padding}`}>
         <h1 className={styles.contact_h1}>GET IN TOUCH</h1>

@@ -2,7 +2,6 @@ import * as React from "react";
 import * as styles from "../styles/about.module.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { globalHistory } from "@reach/router";
 import JumpToTop from "../components/JumpToTop";
 
 const paint = (url) => {
@@ -14,11 +13,9 @@ const paint = (url) => {
 }
 
 const About = () => {
-  const path = globalHistory.location.pathname;
-
   return (
     <main>
-      <Navbar path={path} />
+      <Navbar />
       <JumpToTop />
       <div className={`${styles.about_container} ${styles.padding}`}>
         <div className={styles.header}>
